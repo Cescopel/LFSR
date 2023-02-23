@@ -31,9 +31,9 @@ class LFSR:
         return keystream
 
 
-# Crea un'istanza della classe LFSR con il seed '10101010' e i taps [6, 3].
-my_lfsr = LFSR(seed='10101010', taps=[6, 3],n=15)
-# Genera una sequenza di 10 bit pseudocasuali.
+# Crea un'istanza della classe LFSR con il seed '111011110' e i taps [5, 2].
+my_lfsr = LFSR(seed='111011110', taps=[5, 2],n=15)
+# Genera una sequenza di n bit pseudocasuali.
 keystream = my_lfsr.generate_keystream()
 print(keystream)
 
